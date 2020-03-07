@@ -1,5 +1,76 @@
+/*
+
+Please update a new article in this form:
+  
+  {
+    "Section": "Các Bài Viết",
+    "date":"yyyy-mm-dd",
+    "title": "Tháng Mân Côi",
+    "body": `sometext
+    
+    sometext`
+  },
+
+*/
+
 const articles =
 [
+  
+  {
+    "Section": "Các Bài Viết",
+    "date":"2020-01-26",
+    "title": "Tuần Cầu nguyện cho hiệp nhất các tín hữu Kitô (18-25.1.2020)",
+    "body": `Hằng năm, các Giáo Hội Kitô bao gồm Công Giáo, Chính Thống Giáo, Tin Lành, Anh Giáo tổ chức “Tuần Cầu nguyện cho hiệp nhất các tín hữu Kitô” từ ngày 18 đến 25 tháng giêng. Qua đó, tất cả những ai tin vào Chúa Kitô trên khắp thế giới được mời gọi cùng cầu nguyện cho sự hiệp nhất trong tuần lễ này và có thể kéo dài trong cả năm. Việc cầu nguyện cho hiệp nhất rất cần thiết vì chính Chúa Giêsu đã cầu xin cùng Chúa Cha cho môn đệ nên một: “Lạy Cha, xin cho tất cả nên một, như Cha ở trong con và con ở trong Cha để họ cũng ở trong chúng ta” (Ga 17: 21).
+
+    Chủ đề của tuần cầu nguyện cho sự hiệp nhất các tín hữu Kitô năm 2020 dựa trên câu Kinh Thánh: “Họ đối xử với chúng tôi với lòng nhân đạo hiếm có” (Cv 28,2). Chủ đề này nhắc nhớ câu chuyện thánh Phaolô Tông đồ bị đắm tàu và trôi dạt vào đảo Malta, và được dân địa phương đón tiếp với lòng hiếu khách. Chủ đề này đã được Hội đồng Giám mục Công Giáo và Hội đồng các Giáo Hội Kitô Malta và Gozo chọn và soạn thảo các tài liệu cho tuần cầu nguyện.  
+
+    Như chúng ta được biết, hàng năm các tín hữu Kitô Malta đều cảm tạ Chúa vì biến cố thánh Phaolô và coi đây là nguồn gốc niềm tin Kitô tại đảo này. Lòng hiếu khách không phải là một nhân đức riêng biệt của Kitô giáo. Những người đón tiếp thánh Phaolô và những người đồng hành với ngài đã chứng tỏ lòng nhân đạo trong tinh thần hiếu khách. Nhưng cũng chính sự giúp đỡ khách lạ vì lòng nhân đạo hiếu khách mà họ được rao giảng và lãnh nhận đức tin.
+
+    Về nội dung, tám chủ đề sẽ được đào sâu trong tuần lễ cầu nguyện và suốt năm nay là: hòa giải, ánh sáng, hy vọng, tin tưởng, sức mạnh, lòng hiếu khách, sự hoán cải và lòng quảng đại.
+
+    Về phụng vụ Tại Roma, như thường lệ, chiều ngày 25/01, lễ Thánh Phaolô trở lại, Đức Thánh Cha Phanxicô sẽ chủ sự kinh chiều trọng thể tại Đền thờ Thánh Phaolô ngoại thành, nhân dịp bế mạc tuần cầu nguyện cho sự hiệp nhất, với sự tham dự của các đại diện cộng đồng các Giáo Hội Kitô ở Rôma.
+
+    Vậy ta làm gì để cổ động và áp dụng hiệp nhất trong đời sống Kitô hữu?
+
+    Trước hết, ta phải xác tín rằng: Giáo Hội của Chúa Kitô được mời gọi trở thành hoa quả đầu mùa của Nước Thiên Chúa. Nhưng trong tiến trình ‘trở thành’ này, chúng ta đã có những hành động bất công và gây chia rẽ. Vì vậy, được hiệp nhất với nhau dưới thập giá của Chúa Kitô để bày tỏ lòng hối hận và tin nơi quyền năng của Chúa Kitô để được tha thứ và chữa lành. Đồng thời, chúng ta cầu khẩn ơn thánh của Chúa để có thể chiến đấu chống lại bất công, chia rẽ đang xảy ra giữa các giáo hội tin vào Chúa Kitô.
+
+    Kế đến, hãy áp dụng tám (8) chủ đề suy tư và cầu nguyện trong tám ngày của Tuần Cầu nguyện cho sự Hiệp Nhất và đem ra thực hành trong cuộc sống hằng ngày. Chính từ trong tư tưởng, lời nói và hành động của từng người sẽ là phần đóng góp của chúng ta vào trong những nỗ lực của các giáo hội cho sự hiệp nhất giữa các Kitô hữu. Hy vọng rằng tuần cầu nguyện cho sự hiệp nhất các tín hữu Kitô năm nay là cơ hội để làm chứng tá, cầu nguyện và cùng nhau đón tiếp, “để thế gian tin.”
+
+    Sau nữa, Thiên Chúa có  thể dùng tất cả mọi cơ hội như vụ đắm tàu của thánh Phaolô ở đảo Malta chứng tỏ rằng qua những cuộc du hành nguy hiểm và những cuộc gặp gỡ tình cờ, việc loan báo Tin Mừng cứu độ của Chúa Kitô được thực hiện cho mọi người. Xin cho chính chúng ta cũng biết tận dụng mọi cơ hội khi thuận lợi cũng như khi không thuận lợi để Tin Mừng được loan báo.
+
+    Nguyện xin Thiên Chúa Ba Ngôi khấng nhậm lời cầu nguyện cho sự hiệp nhất, chúc lành cho những cố gắng xích lại gần, và thêm sức để chính mỗi người, qua những việc bác ái và tử tế với những người xa lạ, trở thành dấu chỉ sự hiệp nhất trong cuộc sống mỗi ngày.
+
+    Thân mến,
+
+    Lm. Phanxicô Trần Quốc Tuấn
+`
+  },
+  {
+    "Section": "Các Bài Viết",
+    "date":"2020-01-12",
+    "title": "Chúa Giêsu Chịu Phép Rửa",
+    "body": `Phụng vụ cuối tuần này kính nhớ sự kiện Chúa Giêsu chịu Phép Rửa.  Đây cũng gạch nối giữa hai mùa Phụng vụ : Giáng Sinh và Thường Niên. Tôi xin chia sẻ mấy suy tư liên quan đến Phép Rửa.
+    
+    Trước tiên, về Phụng vụ, Chúa Nhật này là Chúa Nhật I Thường Niên. Như chúng ta biết, Năm Phụng Vụ được khởi đầu bằng Mùa Vọng, rồi đến Mùa Giáng Sinh, rồi đến Mùa Thường Niên (Phần I), rồi đến Mùa Chay, rồi Mùa Phục Sinh, rồi trở lại Mùa Thường Niên (phần II).  Trong Mùa Thường Niên, Giáo Hội sẽ cùng đồng hành với Chúa Giêsu qua các biến cố của đời rao giảng, khởi đầu là sự kiện Chúa chịu Phép Rửa của Gioan Tẩy Giả tại sông Giođan mà chúng ta mừng kính vào Chúa Nhật này.
+    
+    Kế đến, chúng ta cần hiểu rõ rằng Phép Rửa của Gioan Baotixita khác với Bí tích Rửa Tội của chúng ta.
+    
+    Phép Rửa bằng nước do Gioan thực hiện tại sông Giođan “Tôi làm Phép Rửa bằng nước để làm dấu hiệu cho thấy anh em đã ăn năn sám hối” (Mt 3,11). Ai chịu Phép Rửa đều phải có một thái độ nội tâm cũng như bên ngoài, phải tin vào sứ điệp của Gioan, phải trở lại thực lòng, phải quay về với Thiên Chúa.Tuy nhiên, Phép Rửa của Gioan chỉ có tính cách tượng trưng, tự nó không có sức xóa bỏ được tội lỗi mà chỉ là nghi thức nhắc nhở cho mọi người phải ăn năn sám hối và cải thiện đời sống.
+    
+    Phép Rửa của Chúa Giêsu là Phép Rửa tái sinh. Phép Rửa này ban cho người lãnh nhận một đời sống mới. Thánh Phaolô đã giải thích về đời sống này cho những người vừa được rửa tội như sau: “Khi được rửa tội, anh em được an táng với Đức Kitô và trong Phép Rửa anh em cũng được sống lại với Đức Kitô. Anh em đã từng bị chết về mặt tâm linh nhưng giờ đây Thiên Chúa đã mang anh em đến nguồn sống cùng với Đức Kitô” (Cl 2,12-13). Như vậy qua Phép Rửa tái sinh, Chúa Giêsu chia sẻ cho những người được rửa tội đời sống thần linh của Ngài. Đó là sự sống trong Chúa Ba Ngôi. Người tín hữu trở thành thành viên trong Dân Chúa Cha, chi thể trong Thân Mình Chúa Kitô và viên đá sống động kiến tạo Đền Thờ Chúa Thánh Thần, nghĩa là trở nên con cái Thiên Chúa và được thông phần vào sự sống của chính Thiên Chúa Hằng Sống.
+    
+    
+    Sau nữa, trong dịp này, tôi muốn mời quý thành viên cùng nhau suy niệm về trách nhiệm của bậc làm cha mẹ trong việc đem con đến giếng nước rửa tội. Chúng ta biết rằng, qua Bí tích Rửa Tội ta thuộc về dân mới, được Thiên Chúa tuyển chọn được trở nên con cái Thiên Chúa. Ta được gọi Thiên Chúa là Cha, Abba. Đồng thời, cũng nơi Bí tích Rửa Tội, một giao ước được thiết lập với Thiên Chúa qua cha mẹ và người đỡ đầu. Cha mẹ và người đỡ đầu đóng một vai trò rất quan trọng khi cử hành bí tích Rửa Tội cho con mình. Chính họ đứng ra xin cho con được Rửa Tội, tuyên xưng lời hứa của Bí tích Rửa Tội thay cho con cái và hứa “nhận trách nhiệm giáo dục con em trong đức tin, để các em tuân giữ các giới răn là mến Chúa yêu người như chính Chúa Kitô đã dạy chúng ta.”
+    
+    Thay lời kết,  tôi muốn dùng lời mà Thánh Phao-lô đã nhắc nhớ: “Làm sao họ kêu cầu Ðấng họ không tin? Làm sao họ tin Ðấng họ không được nghe? Làm sao mà nghe, nếu không có người rao giảng? (Rm 10:14-15) .Mỗi phụ huynh và mỗi gia đình cầu nguyện, bàn tính, và tìm ra được một thay đổi hay một chương trình cụ thể trong năm mới này để thực hành lời hứa mà chính chúng ta và con em đã long trọng thề hứa.
+    
+    Nguyện xin Thiên Chúa Ba Ngôi hiện diện trong cuộc sống của mỗi người chúng ta trong ân sủng của bí tích Rửa Tội.
+
+    Thân mến,
+
+    Lm. Phanxicô Trần Quốc Tuấn.
+    `
+  },
   {
     "Section": "Các Bài Viết",
     "date":"2019-10-08",
@@ -22,9 +93,7 @@ const articles =
     
     Nguyện xin Thiên Chúa, qua lời chuyển cầu của Mẹ Maria, đặc biệt trong Thánh Mân Côi này chúc lành cho từng người, từng gia đình và cho Giáo Xứ chúng ta.
     
-     
-    
-    Thân mến
+    Thân mến,
     
     Lm. Phanxico Trần Quốc Tuấn`
   },
@@ -113,8 +182,6 @@ const articles =
     Trong tâm tình hiệp thông, tôi tha thiết xin qúy ông bà, anh chị em cùng dâng lên Thiên Chúa tâm tình tạ ơn vì quà tặng quý báu là chức linh mục để phục vụ cộng đồng dân Chúa.  Đồng thời chúng ta cùng hiệp ý với và cầu nguyện cho các linh mục tham dự tuần tĩnh tâm.  Chúa Giêsu đã dạy các Tông Đồ: “Các con hãy lui vào chỗ thanh vắng để nghỉ ngơi đôi chút” (Mc 6,31). Xin cho quý linh mục thực sự có những ngày “nghỉ ngơi” bên Chúa, để khi trở về với một con người đã được đổi mới, là “mục tử nhân lành” theo gương của Giêsu.
     
     Nguyện xin Thiên Chúa, qua lời chuyển cầu của Mẹ Maria, Các Thánh Tử Đạo Việt Nam chúc lành cho cha giảng phòng cũng như tất cả quý linh mục, các riêng các linh mục trong Giáo Xứ chúng ta đi tham dự tuần tĩnh tâm 2019 này.
-    
-     
     
     Thân mến,
     
