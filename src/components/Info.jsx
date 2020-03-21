@@ -29,7 +29,7 @@ const Info = (prop) => {
                     {/* <!-- Single About Us Content --> */}
                     <div className="col-12 col-md-6 col-lg-4">
                         <div className="about-us-content mb-100">
-                            <a href="weeklyNews.html"><img src="http://cttdvnatl.net/gallery/img/church/thongtinmucvu.jpg" alt=""/></a>
+                            <a href="weeklyNews.html"><img src="http://cttdvnatl.net/gallery/img/index/about-thongtinmucvu.jpg" alt=""/></a>
                             <div className="about-text">
                                 <a href="weeklyNews.html"><h4>Tờ Thông Tin Mục Vụ</h4></a>
                                 <p>Thông tin mục vụ hàng tuần của Giáo Xứ Các Thánh Tử Đạo Việt Nam</p>

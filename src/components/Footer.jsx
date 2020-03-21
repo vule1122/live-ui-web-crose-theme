@@ -10,7 +10,7 @@ const Footer = (prop) => {
                 </div>
                 <div className="col-sm-3">
                     <div className="single-footer-widget">
-                        <p className="footer-logo"><img src="img/bg-img/footer_img.png" alt=""/></p>
+                        <p className="footer-logo"><img src="http://cttdvnatl.net/gallery/img/bg-img/footer_img.png" alt=""/></p>
                     </div>
                 </div>
                 <div className="col-sm-3">

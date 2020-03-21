@@ -19,7 +19,8 @@ const CustomCarousel = (prop) => {
                 'Authorization': `Bearer ${auth.data.token}`
             },
             params:{
-                date:'02-10-2020'
+                //Change to the new date
+                date:'03-8-2020' 
             }
         }).then(res => setData(Array.isArray(res.data) ? res.data: []));
     })}, [prop]);

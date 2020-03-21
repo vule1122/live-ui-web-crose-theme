@@ -8,14 +8,14 @@ let getArticleString = (title, date, body) => (
         <div class="single-upcoming-events-area d-flex flex-wrap align-items-center">
             <!-- Thumbnail -->
             <div class="upcoming-events-thumbnail">
-                <img src="img/core-img/articles-chaTuan.jpg" alt="">
+                <img src="http://cttdvnatl.net/gallery/img/core-img/articles-chaTuan.jpg" alt="">
             </div>
             <!-- Content -->
             <div class="upcoming-events-content d-flex flex-wrap align-items-center">
                 <div class="events-text">
                     <h4>${title}</h4>
                     <div class="events-meta">
-                        <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>${date}</a>
+                        <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>${date.split("-").reverse().join("-")}</a>
                     </div>
                     <p>${body.replace(/(?:\r\n|\r|\n)/g, '<br>').substring(0,101) + "..."}</p>
                     <!-- <a href="#">Read More <i class="fa fa-angle-double-right"></i></a> -->
@@ -29,7 +29,7 @@ let getArticleString = (title, date, body) => (
     `
 );
 
-for (let i = 0; i < 7; i++) {
-    let article = articles[i];//articles.find(article => article.date = "2018-10-26");
+for (let i = 0; i < articles.length; i++) {
+    let article = articles[i];
     container.innerHTML += getArticleString(article.title, article.date, article.body);
 }
