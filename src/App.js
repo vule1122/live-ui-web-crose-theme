@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Route,
+  Route
 } from 'react-router-dom';
 import ClergyListPage from './pages/ClergyListPage';
 import Index from './pages/Index';
@@ -16,6 +16,8 @@ import Covid19 from "./pages/covid19";
 import Giaoly from "./pages/giaoly";
 import Glgh from "./pages/Glgh";
 import photos from "./pages/photos";
+import Contact from "./pages/ContactPage";
+import History from './pages/HistoryPage';
 
 const App = () => {
   return (
@@ -32,6 +34,8 @@ const App = () => {
           <Route path="/giaoly" component={Giaoly}/>
           <Route path="/glgh" component={Glgh}/>
           <Route path="/photos" component={photos}/>
+          <Route path="/contact" component={Contact}/>
+          <Route path="/history" component={History}/>
     </Router>
   ) 
 };
