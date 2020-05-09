@@ -1,8 +1,10 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import PopupModal from "./PopupModal";
+import axios from "axios";
 
 const Event = (prop) => {
+    const [getData, setData] = useState([]);
     const [show, setShow] = useState(false);
     const [content, setContent] = useState({});
     const displayModal = (e, title, content) => {
@@ -19,10 +21,31 @@ const Event = (prop) => {
         setContent({});
     };
 
+    useEffect(() => {
+        const now = new Date();
+        const from = new Date(now.setUTCHours(0,0,0,0) - now.getUTCDay() * 86400000);
+        const to = new Date(now.setUTCHours(0,0,0,0) + (6 - now.getUTCDay()) * 86400000);
+        axios.post('https://hvmatl-backend.herokuapp.com/authentication', {
+            username: 'anonymous',
+            password: 'anonymous'
+        }).then(auth => {
+            axios({
+                method: 'GET',
+                url:'https://hvmatl-backend.herokuapp.com/weeklyEvent',
+                headers: {
+                    'Authorization': `Bearer ${auth.data.token}`
+                },
+                params:{
+                    from: from,
+                    to: to
+                }
+            }).then(res => setData(Array.isArray(res.data) ? res.data: []));
+        })}, []);
+
     return (
         <section className="upcoming-events-area section-padding-0-100">
             {/* <!-- Upcoming Events Heading Area --> */}
-            <div className="upcoming-events-heading bg-img bg-overlay bg-fixed" style={{backgroundImage: "url(http://cttdvnatl.net/gallery/img/bg-img/1.jpg)"}}>
+            <div className="upcoming-events-heading bg-img bg-overlay bg-fixed">
                 <div className="container">
                     <div className="row">
                         {/* <!-- Section Heading --> */}
@@ -35,10 +58,10 @@ const Event = (prop) => {
                     </div>
                 </div>
             </div>
-
             {/* <!-- Upcoming Events Slide --> */}
             <Carousel controls="false">
-                <Carousel.Item>
+                {getData.map((event, i) =>
+                <Carousel.Item key={i}>
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
@@ -47,26 +70,25 @@ const Event = (prop) => {
                                     <div className="single-upcoming-events-area d-flex flex-wrap align-items-center">
                                         {/* <!-- Thumbnail --> */}
                                         <div className="upcoming-events-thumbnail">
-                                            <img src="http://cttdvnatl.net/gallery/img/index/upcoming-upcoming_events.jpg" alt=""/>
+                                            <img src={event.image} alt=""/>
                                         </div>
                                         {/* <!-- Content --> */}
                                         <div className="upcoming-events-content d-flex flex-wrap align-items-center">
-                                            <div className="events-text">
-                                                <p><a href="/" onClick={(e) => displayModal(e, "Lễ Truyền Tin", "news/UPDATE.html#target0")} style={{color:"#850000"}}>PHỤNG VỤ -Ngày 25.3.2019, Lễ Truyền Tin</a></p>
-                                                <p><a href="/" onClick={(e) => displayModal(e, "CẬP NHẬT HÓA CORONAVIRUS", "news/UPDATE.html#target1")} style={{color:"#850000"}}>CẬP NHẬT HÓA CORONAVIRUS</a></p>
-                                                <p><a href="/" onClick={(e) => displayModal(e, "KHỐI GIÁO DỤC", "news/UPDATE.html#target2")} style={{color:"#850000"}}>KHỐI GIÁO DỤC: COVID 19 dừng tất cả các sinh hoạt cho đến khi có thông báo lại</a></p>
-                                                <p><a href="/" onClick={(e) => displayModal(e, "HỘI CHỢ MÙA THU 2020", "news/UPDATE.html#target3")} style={{color:"#850000"}}>HỘI CHỢ MÙA THU 2020</a></p>
-                                                <p><a href="/" onClick={(e) => displayModal(e, "BAN BÁC ÁI XÃ HỘI", "news/UPDATE.html#target4")} style={{color:"#850000"}}>BAN BÁC ÁI XÃ HỘI</a></p>
-                                                <p><a href="/" onClick={(e) => displayModal(e, "KHỐI GÂY QUỸ", "news/UPDATE.html#target5")} style={{color:"#850000"}}>KHỐI GÂY QUỸ</a></p>
-                                            </div>
-                                            {show ? <PopupModal show="true" content={content} onHide={hideModal}/> : null}
+                                            {event.events.map((evnt, ind) => {
+                                                return (
+                                                    <div className="events-text" key={ind}>
+                                                        <p><a href="/" onClick={(e) => displayModal(e, evnt.title, evnt.src)} style={{color:"#850000"}}><i className="fas fa-calendar"/> {evnt.title}</a></p>
+                                                    </div>
+                                                );
+                                            })}
+                                            {show ? <PopupModal show={show} content={content} onHide={hideModal}/> : null}
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </Carousel.Item>
+                </Carousel.Item>)}
             </Carousel>
         </section>
     );

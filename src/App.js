@@ -5,37 +5,64 @@ import {
 } from 'react-router-dom';
 import ClergyListPage from './pages/ClergyListPage';
 import Index from './pages/Index';
-import Directors from './pages/Directors';
+import StaffPage from './pages/StaffPage';
 import DeptInfo from './pages/DeptOwnerPage';
 import About from './pages/About';
-import Org from './pages/Org';
+import OrganizationChart from './pages/OrganizationChart';
 import VietHong from './pages/VietHongPage';
 import Activities from './pages/ActivitiesPage';
-import './css/style.css';
 import Covid19 from "./pages/covid19";
 import Giaoly from "./pages/giaoly";
 import Glgh from "./pages/Glgh";
 import photos from "./pages/photos";
+import Catholic_teaching from "./pages/catholic_teaching";
+import Forms from "./pages/forms";
+import WeeklyNews from "./pages/WeeklyNews";
 import Contact from "./pages/ContactPage";
 import History from './pages/HistoryPage';
+import PrintedCalendarPage from './pages/PrintedCalendarPage';
+import FallFestPage from './pages/FallFestPage';
+import ThieuNhiPage from './pages/ThieuNhiPage';
+import VietHongTeacherPage from './pages/VietHongTeacherPage';
+import VietHongActivitiesPage from './pages/VietHongActivitiesPage';
+import VietHongDocumentsPage from './pages/VietHongDocumentsPage';
+import VietHongContactPage from './pages/VietHongContactPage';
+import MassSchedule from "./pages/MassSchedule";
+import LearnBible from "./pages/LearnBible";
+import Articles from './pages/Articles';
+import ArticleDetail from './pages/ArticleDetail';
 
 const App = () => {
   return (
     <Router>
           <Route path="/clergy-list" component={ClergyListPage} exact />
           <Route path="/departments/:id" component={DeptInfo} exact />
-          <Route path="/directors" component={Directors} exact/>
+          <Route path="/staff" component={StaffPage} exact/>
           <Route path="/" component={Index} exact/>
           <Route path="/about" component={About}/>
-          <Route path="/org" component={Org}/>
-          <Route path="/vietHong" component={VietHong}/>
+          <Route path="/org" component={OrganizationChart}/>
           <Route path="/activities" component={Activities}/>
           <Route path="/covid19" component={Covid19}/>
           <Route path="/giaoly" component={Giaoly}/>
           <Route path="/glgh" component={Glgh}/>
           <Route path="/photos" component={photos}/>
+          <Route path="/forms" component={Forms}/>
+          <Route path="/catholic_teaching" component={Catholic_teaching}/>
+          <Route path="/weeklyNews" component={WeeklyNews}/>
           <Route path="/contact" component={Contact}/>
           <Route path="/history" component={History}/>
+          <Route path="/printed-calendar" component={PrintedCalendarPage}/>
+          <Route path="/fall-fest" component={FallFestPage}/>
+          <Route path="/thieu-nhi" component={ThieuNhiPage}/>
+          <Route path="/massSchedule" component={MassSchedule}/>
+          <Route path="/learnBible" component={LearnBible}/>
+          <Route path="/viethong" component={VietHong}/>
+          <Route path="/viet-hong-teachers" component={VietHongTeacherPage}/>
+          <Route path="/viet-hong-activities" component={VietHongActivitiesPage}/>
+          <Route path="/viet-hong-documents" component={VietHongDocumentsPage}/>
+          <Route path="/viet-hong-contact" component={VietHongContactPage}/>
+          <Route path="/Articles" component={Articles}/>
+          <Route path="/ArticleDetail/:date" component={ArticleDetail}/>
     </Router>
   ) 
 };

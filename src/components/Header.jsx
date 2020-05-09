@@ -176,20 +176,20 @@ const Header = (prop) => {
             <div className="top-header">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-12">
+                        <div className="col-12 col-md-12 col-sm-12">
                             <div className="top-header-content d-flex flex-wrap align-items-center justify-content-between">
                                 <div className="top-header-meta d-flex flex-wrap">
-                                    <div><i className="fa fa-clock-o fa-lg time"aria-hidden="true" ref={time}/><span ref={navbarTime}>{getTime}</span><i className="fa fa-thermometer-half fa-lg temperature" ref={temperature} aria-hidden="true"></i><span ref={navbarTemp}>{getTemp} &#176;F</span></div>
+                                    <div><i className="fas fa-clock time" aria-hidden="true" ref={time}/><span ref={navbarTime}>{getTime}</span><i className="fas fa-thermometer-half temperature" ref={temperature} aria-hidden="true"></i><span ref={navbarTemp}>{getTemp} &#176;F</span></div>
                                     <div className="top-social-info">
-                                        <a href="https://www.facebook.com/cttdvn" aria-label="facebook"><i className="fa fa-facebook fa-lg" ref={facebook}></i></a>
-                                        <a href="https://www.youtube.com/thanhtudaovietnam" aria-label="youtube"><i className="fa fa-youtube fa-lg" ref={youtube}></i></a>
-                                        <a href="https://twitter.com/thanhtudaovn" aria-label="twitter"><i className="fa fa-twitter fa-lg" ref={twitter}></i></a>
+                                        <a href="https://www.facebook.com/cttdvn" aria-label="facebook"><i className="fab fa-facebook" ref={facebook}></i></a>
+                                        <a href="https://www.youtube.com/thanhtudaovietnam" aria-label="youtube"><i className="fab fa-youtube" ref={youtube}></i></a>
+                                        <a href="https://twitter.com/thanhtudaovn" aria-label="twitter"><i className="fab fa-twitter" ref={twitter}></i></a>
                                     </div>
                                 </div>
                                 <div className="top-header-meta">
-                                    <a href="massTime.html" className="email-address"><i className="fa fa-calendar-o fa-lg" aria-hidden="true" ref={massSchedule}></i><span>Giờ Lễ / MassTimes</span></a>
-                                    <a href="mailto:info@cttdvnatl.org" className="email-address"><i className="fa fa-envelope fa-lg" aria-hidden="true" ref={email}></i> <span>info@cttdvnatl.org</span></a>
-                                    <a href="tel:770-921-0077" className="phone"><i className="fa fa-phone fa-lg" aria-hidden="true" ref= {phone}></i> <span>770-921-0077</span></a>
+                                    <a href="/massSchedule" className="email-address"><i className="fas fa-calendar-alt" aria-hidden="true" ref={massSchedule}></i><span>Giờ Lễ / MassTimes</span></a>
+                                    <a href="mailto:info@cttdvnatl.org" className="email-address"><i className="fas fa-envelope" aria-hidden="true" ref={email}></i> <span>info@cttdvnatl.org</span></a>
+                                    <a href="tel:770-921-0077" className="phone"><i className="fas fa-phone" aria-hidden="true" ref= {phone}></i> <span>770-921-0077</span></a>
                                 </div>
                             </div>
                         </div>
@@ -203,7 +203,7 @@ const Header = (prop) => {
                             <nav className="classy-navbar justify-content-between" id="croseNav">
                                 <a href="/" className="nav-brand"><img src={logo} alt=""/></a>
                                 <div className="classy-navbar-toggler" onClick={activateSidebar}>
-                                    <a href="https://giving.parishsoft.com/App/Giving/holy4545250" className="crose-btn" onClick={(e) => displayModal(e, "Huong dan Donation", "img/core-img/donation_instruction.jpg")}>DONATION</a>
+                                    <a href="https://giving.parishsoft.com/App/Giving/holy4545250" className="crose-btn" onClick={(e) => displayModal(e, "Huong dan Donation", "img/core-img/donation_instruction.jpg")}><i className="fas fa-donate"/>  DONATION</a>
                                     <span className="navbarToggler" ref={navbarToggler}><span/><span/><span/></span>
                                 </div>
                                 <div className="classy-menu" ref={navbarMenu} onClick={closeSidebar}>
@@ -218,16 +218,16 @@ const Header = (prop) => {
                                                     <li><a href="/about">Sứ Mệnh Giáo Xứ</a></li>
                                                     <li><a href="/history">Lịch Sử Giáo Xứ</a></li>
                                                     <li><a href="/clergy-list">Linh Mục/Tu Sĩ</a></li>
-                                                    <li><a href="/directors">Qúy Chức</a></li>
+                                                    <li><a href="/staff">Qúy Chức</a></li>
                                                 </ul>
                                                 <span className="dd-trigger"/>
                                             </li>
                                             <li className="cn-dropdown-item has-down" onClick={(e) => toggleSubMenu(1, e)}><a href="/#">TIN TỨC/SỰ KIỆN</a>
                                                 <ul className="dropdown">
                                                     <li><a href="/activities">Sinh Hoạt Giáo Xứ</a></li>
-                                                    <li><a href="https://drive.google.com/file/d/15MIqXgWDNfav8VOyCwepnhgZnvay7Eai/preview">Lịch 2020</a></li>
-                                                    <li><a href="https://fallfestivalatl.org">Hội Chợ Mùa Thu</a></li>
-                                                    <li><a href="https://www.tomathienatl.org">TNTT Tôma Thiện</a></li>
+                                                    <li><a href="/printed-calendar">Lịch 2020</a></li>
+                                                    <li><a href="/fall-fest">Hội Chợ Mùa Thu</a></li>
+                                                    <li><a href="/thieu-nhi">TNTT Tôma Thiện</a></li>
                                                 </ul>
                                                 <span className="dd-trigger"/>
                                             </li>
@@ -237,11 +237,8 @@ const Header = (prop) => {
                                                 <li><a href="/Org">Sơ Đồ Tổ Chức</a></li>
                                                     <li><a href="/departments/KCS">Khối Cơ Sở</a></li>
                                                     <li><a href="/departments/KDS">Khối Đời Sống</a></li>
-                                                    <li className="KGD"><a href="../departments/KGD">Khối Giáo Dục</a>
+                                                    <li className="KGD"><a href="http://giaoly.hvmatl.org">Khối Giáo Dục</a>
                                                         <ul>
-                                                            <li>
-                                                            <a href="/Giaoly"><i>Giáo Lý</i></a>
-                                                            </li>
                                                             <li>
                                                                 <a href="/VietHong"><i>Việt Ngữ</i></a>
                                                             </li>
@@ -258,18 +255,18 @@ const Header = (prop) => {
                                             <li className="cn-dropdown-item has-down" onClick={(e) => toggleSubMenu(3, e)}>
                                                 <a href="/#">Thư Viện</a>
                                                 <ul className="dropdown">
-                                                    <li><a href="/weeklyNews.html">Thông Tin Mục Vụ</a></li>
-                                                    <li><a href="/articles.html">Các Bài Viết</a></li>
-                                                    <li><a href="/glgh">Giáo Lý</a></li>
+                                                    <li><a href="/weeklyNews">Thông Tin Mục Vụ</a></li>
+                                                    <li><a href="/Articles">Các Bài Viết</a></li>
+                                                    <li><a href="/catholic_teaching">Giáo Lý</a></li>
                                                     <li><a href="/photos">Thư Viện Hình Ảnh</a></li>
-                                                    <li><a href="/forms.html">Đơn Từ</a></li>
+                                                    <li><a href="/forms">Đơn Từ</a></li>
                                                     <li><a href="/prayerRequest.html">Prayer Request</a></li>
                                                 </ul>
                                                 <span className="dd-trigger"/>
                                             </li>
                                             <li><a href="/contact">LIÊN HỆ</a></li>
                                         </ul>
-                                        <a href="https://giving.parishsoft.com/App/Giving/holy4545250" className="crose-btn header-btn" onClick={(e) => displayModal(e, "Huong dan Donation", "img/core-img/donation_instruction.jpg")}>DONATION</a>
+                                        <a href="https://giving.parishsoft.com/App/Giving/holy4545250" className="crose-btn header-btn" onClick={(e) => displayModal(e, "Huong dan Donation", "img/core-img/donation_instruction.jpg")}><i className="fas fa-donate"/>  DONATION</a>
                                     </div>
                                 </div>
                             </nav>
